@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} Posts {% endblock title %}
+
+{% block content %} 
+    <h1> Message board</h1>
+    <ul>
+        {% for post in all_posts_list %} 
+            <li> {{ post.text }} </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
